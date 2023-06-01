@@ -1,3 +1,26 @@
-:root {
+:root{
   --tipo-roxo: rgb(129, 71, 248);
+  --primary: #0d6efd;
+  --text-primary: #212529;
+  --text-secondary: #18232e;
+  --body: #fff;
+  --text-menu: #fff;
+  --text-body: #212529;
+  --bg-aux-gray: #f8f9fa
+}
+
+:root .dark-theme{
+  --primary: #212529;
+  --text-primary: #fff;
+  --text-secondary: #b9b9b9;
+  --body: #4B4B4B;
+  --text-menu: #fff;
+  --text-body: #fff;
+  --bg-aux-gray: #212529;
+  --bs-light-rgb: 33,37,41;
+  --bs-body-color: #fff;
+}
+
+body{
+  background-color: var(--body);
 }

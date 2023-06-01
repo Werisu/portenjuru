@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  @Output() menuClick = new EventEmitter<string>;
 
-  showNotification = false;
+  public mode = false;
+  public showNotification = false;
+  public showMenu = false;
+  public isChecked: boolean = false;
+  public isSelect = '';
+
+  constructor(private elementRef: ElementRef) {}
+
+  public toggle(){
+    this.isChecked = !this.isChecked;
+    const theme = document.body.classList.toggle('dark-theme');
+  }
 
 }

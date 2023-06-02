@@ -7,6 +7,8 @@ import { HeaderModule } from 'src/app/components/header/header.module';
 import { HeroComponent } from './hero/hero.component';
 import { ConhecimentoComponent } from './conhecimento/conhecimento.component';
 import { CardComponent } from './conhecimento/card/card.component';
+import { PortfoliosComponent } from './portfolios/portfolios.component';
+import { CardPortfolioComponent } from './portfolios/card/card.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { CardComponent } from './conhecimento/card/card.component';
     HomeComponent,
     HeroComponent,
     ConhecimentoComponent,
-    CardComponent
+    CardComponent,
+    CardPortfolioComponent,
+    PortfoliosComponent
   ],
   imports: [
     CommonModule,

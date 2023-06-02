@@ -31,10 +31,10 @@
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Inicio</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Tecnologia</a>
-            <a (click)="menuClick.emit('secao1'); isSelect = 'conhecimento'" [ngClass]="{'active': isSelect == 'conhecimento'}" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" routerLinkActive="router-link-active" >Conhecimentos</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projetos</a>
+            <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Inicio</a>
+            <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Tecnologia</a>
+            <a (click)="menuClick.emit('secao1')" [ngClass]="{'active': isSelect == 'conhecimento'}" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" routerLinkActive="router-link-active" >Conhecimentos</a>
+            <a (click)="menuClick.emit('secao2')" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projetos</a>
           </div>
         </div>
       </div>

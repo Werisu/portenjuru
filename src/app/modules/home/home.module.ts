@@ -9,6 +9,7 @@ import { ConhecimentoComponent } from './conhecimento/conhecimento.component';
 import { CardComponent } from './conhecimento/card/card.component';
 import { PortfoliosComponent } from './portfolios/portfolios.component';
 import { CardPortfolioComponent } from './portfolios/card/card.component';
+import { FooterModule } from 'src/app/components/footer/footer.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { CardPortfolioComponent } from './portfolios/card/card.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    HeaderModule
+    HeaderModule,
+    FooterModule
   ]
 })
 export class HomeModule { }

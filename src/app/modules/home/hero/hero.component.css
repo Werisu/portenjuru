@@ -1,0 +1,10 @@
+.loading {
+  width: 400px;
+  height: 539px;
+  filter: blur(5px);
+}
+
+.loading2 {
+  height: 95.77px;
+  filter: blur(5px);
+}

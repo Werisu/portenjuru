@@ -12,7 +12,7 @@ export class PortfoliosComponent {
       id: 1,
       tags: ['Angular 15', 'Tailwind', 'Evento de tecla'],
       title: 'Twitter Clone',
-      urlGitHub: 'https://github.com/Werisu/tw-angula',
+      urlGitHub: 'https://github.com/Werisu/tw-angular',
       urlImage: 'assets/image/clone-twitter.png',
     },
     {

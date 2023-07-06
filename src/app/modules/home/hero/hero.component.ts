@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { bounceInUpAnimation, bounceInUpOnEnterAnimation, fadeInOnEnterAnimation } from 'angular-animations';
+import { bounceInUpOnEnterAnimation, fadeInOnEnterAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-hero',

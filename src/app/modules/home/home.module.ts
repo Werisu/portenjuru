@@ -11,6 +11,7 @@ import { PortfoliosComponent } from './portfolios/portfolios.component';
 import { CardPortfolioComponent } from './portfolios/card/card.component';
 import { FooterModule } from 'src/app/components/footer/footer.module';
 import { RedesSociaisComponent } from './redes-sociais/redes-sociais.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { RedesSociaisComponent } from './redes-sociais/redes-sociais.component';
     CommonModule,
     HomeRoutingModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    FontAwesomeModule
   ]
 })
 export class HomeModule { }

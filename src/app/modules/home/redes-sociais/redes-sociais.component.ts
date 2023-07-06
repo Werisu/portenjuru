@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-redes-sociais',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./redes-sociais.component.css']
 })
 export class RedesSociaisComponent {
+
+  faLinkedin = faLinkedin;
+  faGithub = faGithub;
+  faInstagram = faInstagram;
 
 }

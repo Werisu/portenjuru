@@ -7,8 +7,8 @@
 .cor-roxo{
   color: var(--tipo-roxo);
 }
-.text-primary{
-  color: var(--text-primary);
+.text-mode-primary{
+  color: var(--text-mode-primary);
 }
 .text-secondary{
   color: var(--text-secondary);

@@ -5,12 +5,12 @@
       <div class="w-full px-4 lg:w-5/12">
         <div class="hero-content">
           <h1
-            class="text-primary mb-3 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]"
+            class="text-mode-primary mb-3 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px] flex"
             [@enter1]
           >
             Olá, sou o Wellysson Rocha <span class="wave" (mouseenter)="acenar()" [ngClass]="{'wave' : estadoAcenar}">👋🏾</span>
           </h1>
-          <p class="text-secondary mb-8 max-w-[480px] text-base" [@enter2]>
+          <p class="text-mode-primary mb-8 max-w-[480px] text-base" [@enter2]>
             Sou o <strong>mestre dos códigos</strong>, <strong>desenvolvedor angular</strong> e <strong>rei da diversão</strong> no mundo da tecnologia.
             Se você quer se aventurar no universo do desenvolvimento, estou aqui
             para ensinar e entreter com dicas incríveis nas redes sociais.
@@ -38,6 +38,7 @@
       <div class="w-full px-4 lg:w-6/12">
         <div class="lg:ml-auto lg:text-right">
           <div class="relative z-10 inline-block pt-11 lg:pt-0 imagem-container">
+            <div class="w-100 text-mode-primary" [@tada]="isFlipped"><span *ngIf="isMobile" [textContent]="!isFlipped ? 'Clique na foto para ver o autor 😎' : 'Eu sou bonito, não é mesmo? 🤭'"></span></div>
             <img
               *ngIf="!isFlipped"
               [@fadeInOnEnter]

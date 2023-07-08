@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { bounceInUpOnEnterAnimation, fadeInOnEnterAnimation, flipInYOnEnterAnimation, flipOutYOnLeaveAnimation, shakeOnEnterAnimation } from 'angular-animations';
+import { bounceInUpOnEnterAnimation, fadeInAnimation, fadeInOnEnterAnimation, flipInYOnEnterAnimation, flipOutYOnLeaveAnimation, shakeOnEnterAnimation, tadaAnimation } from 'angular-animations';
+import { BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-hero',
@@ -12,13 +13,16 @@ import { bounceInUpOnEnterAnimation, fadeInOnEnterAnimation, flipInYOnEnterAnima
     fadeInOnEnterAnimation(),
     flipInYOnEnterAnimation(),
     flipOutYOnLeaveAnimation(),
-    shakeOnEnterAnimation()
+    shakeOnEnterAnimation(),
+    fadeInAnimation(),
+    tadaAnimation()
   ]
 })
 export class HeroComponent implements OnInit {
 
   isFlipped: boolean = false;
   estadoAcenar = false;
+  isMobile: boolean = false;
 
   imageUrl: { image: string, title: string }[] = [
     { image: 'assets/image/perfil-use.png', title: 'Perfil' },
@@ -28,16 +32,22 @@ export class HeroComponent implements OnInit {
 
   isLoading = true;
 
-  constructor() {}
+  constructor(private bk: BreakpointObserver) {}
 
   ngOnInit(): void {
     setInterval(() => {
       this.estadoAcenar = true;
     }, 1000);
+
+    this.breakPointMobile();
   }
 
   onImageLoad(event: Event) {
     this.isLoading = false;
+  }
+
+  breakPointMobile(){
+    this.isMobile = this.bk.isMatched('(max-width: 599px)');
   }
 
   // Método para inverter a imagem

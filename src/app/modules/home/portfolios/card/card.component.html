@@ -13,7 +13,7 @@
       <div
         class="relative z-10 mx-7 -mt-20 rounded-lg bg-white py-9 px-3 text-center shadow-lg"
       >
-        <span class="text-primary mb-2 block text-sm font-semibold">
+        <span class="text-mode-primary mb-2 block text-sm font-semibold">
           <span *ngFor="let tag of item.tags; let i = index">{{ tag }} <span *ngIf="i != item.tags.length-1"> • </span> </span>
         </span>
         <h3 class="text-dark mb-4 text-xl font-bold">{{ item.title }}</h3>

@@ -1,0 +1,117 @@
+.Projects_container__NBkTP {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem auto;
+  /* max-width: 1280px; */
+  text-align: center;
+  color: #fff;
+}
+.Projects_container__title__xocj0 {
+  color: rgb(170, 127, 255);
+  font-size: 2rem;
+  margin: auto;
+  max-width: 70vw;
+}
+.Projects_projectsGallery__JQPts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+.RepoCard_card__9aRuk {
+  align-items: center;
+  background: linear-gradient(315deg,#1e1e1e,#434343);
+  border-radius: 1.5rem;
+  box-shadow: drop-shadow(50px,#000,100px);
+  display: flex;
+  flex-direction: column;
+  /* font-family: Sora; */
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+.RepoCard_thumbnail__vlMk2 {
+  align-items: center;
+  background-color: #d0d0d0;
+  border-radius: 0.75rem;
+  height: 250px;
+  justify-content: center;
+  margin: 1.2rem 0;
+  width: 250px;
+}
+.RepoCard_thumbnail__img__s7HtK {
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
+  left: -1.5rem;
+  position: relative;
+  top: -1.5rem;
+  max-width: 300px !important;
+}
+.Languages_languages__yxleq {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0.5rem 0;
+  width: 250px;
+}
+.Languages_languages__lang__JLjeh {
+  background-color: rgb(129, 71, 248);
+  border-radius: 0.25rem;
+  color: #141414;
+  flex-grow: 1;
+  /* font-family: Sora; */
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: .75rem;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+}
+.Buttons_cta__z6rtN {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid rgb(129, 71, 248);
+  border-radius: 2rem;
+  cursor: pointer;
+  height: 2.2rem;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 0 1rem;
+  position: relative;
+  transition: .2s;
+  font-size: 14px;
+  width: 130px;
+}
+.Buttons_cta__z6rtN:hover {
+  background-color: rgb(170, 127, 255);
+  color: #141414;
+  width: 150px;
+}
+.RepoCard_card__title__W4wQv {
+  color: #f7f0f5;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  margin: 0.5rem 0;
+  width: 250px;
+}
+.RepoCard_card__description__qX9uq {
+  color: #d0d0d0;
+  font-size: .8rem;
+  height: 3.5rem;
+  margin: 0.5rem 0;
+  width: 250px;
+}
+.RepoCard_card__buttons__mdgoz {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+  width: 250px;
+}
+.RepoCard_gitButton__mhU1Y {
+  fill: #727272;
+  cursor: pointer;
+  transition: .2s;
+}
+.RepoCard_gitButton__mhU1Y:hover {
+  fill: #d0d0d0;
+}

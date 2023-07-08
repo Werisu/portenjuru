@@ -12,6 +12,7 @@ import { CardPortfolioComponent } from './portfolios/card/card.component';
 import { FooterModule } from 'src/app/components/footer/footer.module';
 import { RedesSociaisComponent } from './redes-sociais/redes-sociais.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CardReposComponent } from './portfolios/card-repos/card-repos.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeroComponent,
     ConhecimentoComponent,
     CardComponent,
+    CardReposComponent,
     CardPortfolioComponent,
     PortfoliosComponent,
     RedesSociaisComponent

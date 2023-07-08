@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Repositorios } from 'src/app/interfaces/repositorio';
 import { Portfolios } from 'src/app/models/portfolio';
+import { RepositorioService } from 'src/app/service/repositorio.service';
 
 @Component({
   selector: 'app-portfolios',
   templateUrl: './portfolios.component.html',
   styleUrls: ['./portfolios.component.css'],
 })
-export class PortfoliosComponent {
+export class PortfoliosComponent implements OnInit {
+  public repositorios: Repositorios = [];
   public portfolios: Portfolios = [
     {
       id: 1,
@@ -51,4 +54,39 @@ export class PortfoliosComponent {
       urlImage: 'assets/image/cowboy.png',
     },
   ];
+
+  constructor(private reposService: RepositorioService) {}
+
+  ngOnInit(): void {
+    // this.getRepositorios();
+    this.getProjetosSelecionados();
+  }
+
+  public getRepositorios() {
+    return this.reposService.getAll().subscribe({
+      next: (res) => {
+        this.repositorios = res;
+        console.log(res);
+      },
+      error: (err) => {},
+    });
+  }
+
+  public getProjetosSelecionados() {
+    this.reposService.getProjetosSelecionados().subscribe({
+      next: (repos) => {
+        const projetosSelecionados = repos.filter(repo => {
+          return repo.name === 'tw-angular' || repo.name === 'memoteca' || repo.name === 'angular-buzzfeed' || repo.name === 'angular-rxjs' || repo.name === 'formulario-angular' || repo.name === 'cowboy' || repo.name === 'buscante' || repo.name === 'memorando' ;
+          // Substitua 'name' pelo atributo correto que identifica o nome do projeto nos dados da resposta da API do GitHub.
+        });
+
+        console.log(projetosSelecionados);
+        this.repositorios = projetosSelecionados.map((repo) => {
+          return {...repo, image: `assets/image/${repo.name}.png`}
+        });
+        // Faça o que quiser com os projetos selecionados.
+      },
+      error: (err) => {},
+    });
+  }
 }

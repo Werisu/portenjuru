@@ -10,6 +10,6 @@
 .text-mode-primary{
   color: var(--text-mode-primary);
 }
-.text-secondary{
-  color: var(--text-secondary);
+.text-mode-secondary{
+  color: var(--text-mode-secondary);
 }

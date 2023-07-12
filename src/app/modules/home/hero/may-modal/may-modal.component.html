@@ -1,0 +1,30 @@
+<div class="modal-header">
+  <h4 class="modal-title">Olá {{ name }}!</h4>
+  <button type="button" class="text-gray-800 flex" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <fa-icon style="font-size: 20px;" [icon]="faXmark"></fa-icon>
+  </button>
+</div>
+<div class="modal-body">
+  <div>
+    <div class="max-w-md bg-white rounded-lg shadow-lg p-8">
+      <div class="photos mb-2">
+        <div [@listState] *ngIf="photos.length > 0" class="flex gap-2 justify-center items-center">
+          <fa-icon [icon]="faHeart" class="text-red-500"></fa-icon>
+          <img *ngFor="let photo of photos" [src]="photo.image" alt="" class="rounded-full w-1/5">
+          <fa-icon [icon]="faHeart" class="text-red-500"></fa-icon>
+        </div>
+      </div>
+
+      <h1 class="text-2xl font-bold mb-4 mt-2">Declaração de Saudades</h1>
+      <p class="text-lg mb-4">Sinto uma imensa saudade de você desde que você partiu para São Paulo. Cada momento sem você parece uma eternidade. Meu coração anseia pelo seu retorno.</p>
+      <p class="text-lg mb-4">As memórias que compartilhamos juntos são preciosas e guardo cada uma delas com carinho. Lembro-me dos nossos sorrisos, abraços e dos momentos especiais que vivemos. Nada se compara à sua presença em minha vida.</p>
+      <p class="text-lg mb-4">Enquanto você estiver longe, cada dia será um desafio, mas meu amor por você só cresce. Mal posso esperar para tê-la de volta em meus braços, onde você pertence.</p>
+      <p class="text-lg mb-4">Eduarda, saiba que você é a pessoa mais especial em minha vida e que seu amor preenche cada espaço do meu coração. Conte os dias, pois logo estaremos juntos novamente.</p>
+      <p class="text-lg mb-4">Com todo meu amor,</p>
+      <p class="text-lg">Wellysson</p>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Fechar</button>
+</div>

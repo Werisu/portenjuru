@@ -13,6 +13,8 @@ import { FooterModule } from 'src/app/components/footer/footer.module';
 import { RedesSociaisComponent } from './redes-sociais/redes-sociais.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardReposComponent } from './portfolios/card-repos/card-repos.component';
+import { MayModalComponent } from './hero/may-modal/may-modal.component';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,14 +25,16 @@ import { CardReposComponent } from './portfolios/card-repos/card-repos.component
     CardReposComponent,
     CardPortfolioComponent,
     PortfoliosComponent,
-    RedesSociaisComponent
+    RedesSociaisComponent,
+    MayModalComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     HeaderModule,
     FooterModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModalModule
   ]
 })
 export class HomeModule { }

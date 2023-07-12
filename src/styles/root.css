@@ -2,7 +2,7 @@
   --tipo-roxo: rgb(129, 71, 248);
   --primary: #0d6efd;
   --text-mode-primary: #212529;
-  --text-secondary: #18232e;
+  --text-mode-secondary: #18232e;
   --body: #fff;
   --card: #fff;
   --text-menu: #fff;
@@ -13,7 +13,7 @@
 :root .dark-theme{
   --primary: #212529;
   --text-mode-primary: #fff;
-  --text-secondary: #f5f5f5;
+  --text-mode-secondary: #f5f5f5;
   --body: #141414;
   --card: #434343;
   --text-menu: #fff;
